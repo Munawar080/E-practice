@@ -43,7 +43,7 @@
     
     <!-- responsive devices styles -->
 	<link rel="stylesheet" media="screen" href="css/responsive-leyouts.css" type="text/css" /> <link rel="stylesheet" href="js/lightbox/light_window.css" type="text/css" media="all" />
- 
+	<link href="css/form.css" rel="stylesheet" type="text/css">
     <script type="text/javascript">
 
 	//light Window
@@ -77,6 +77,7 @@
 	<script src="js/validation.js" type="text/javascript"></script>
     <script language="javascript" type="text/javascript" src="js/prototype.js"></script>
 	<script src='https://www.google.com/recaptcha/api.js'></script>
+	<script src="js/zohovalidation.js"></script>
 
 	
 	
@@ -190,84 +191,66 @@
     <p>We welcome all feedback and suggestions relating to ePractice. Please use our online form for a prompt response.</p>
 
     <br />
-    <h3>Contact Form</h3>
 
-   <form name="Contact Us" action="https://www.e-practice.com.au/crm/modules/Webforms/capture.php" method="post" accept-charset="utf-8" enctype="multipart/form-data"><input name="__vtrftk" value="sid:e9cecf92d1ca2295b347179afa2d84672b9684cd,1458537606" type="hidden" >
-	<input name="publicid" value="2bfe2afbd86acf8a522e0d03987940df" type="hidden">
-	<input name="name" value="Contact Us" type="hidden">
-        <!--<input name="VTIGER_RECAPTCHA_PUBLIC_KEY" value="6LfbUxsTAAAAAHWPFCuaMYMry1PUmvnnJjrfWQ82" type="hidden">-->
-		
-		<!--<input name="VTIGER_RECAPTCHA_PUBLIC_KEY" value="6LfB1l8UAAAAANMtdLv6uumX2RNgsT1MnfU5bftj" type="hidden">-->
-    
-        <fieldset>
-        <div id="loadsignup"></div>	
-                
-        <label for="fname" class="blocklabel">Your Name*</label>
-        <p class=""><input class="input_bg" name="lastname" value="" required="" type="text">   </p>
-        
-        
-        <label for="email" class="blocklabel">E-Mail*</label>
-        <p class=""><input class="input_bg" name="email" value="" required="" type="email"> </p>
-        
-        
-        <label for="website" class="blocklabel">Website</label>
-        <p><input class="input_bg" name="website" value="" type="text">  </p>
-        
-
-        <label for="phone_number" class="blocklabel">Phone number</label>
-        <p>	<input class="input_bg" name="mobile" value="" required="" type="text"> </p>
-		
-		<label for="phone_number" class="blocklabel">Company Name</label>
-        <p>	<input class="input_bg" name="company" value="" type="text"> </p>
-
-        
-        <label for="enquirydetails" class="blocklabel">Message</label>
-        <p class=""><textarea class="textarea_bg" name="description"></textarea></p>
-		
-		<select name="leadsource" hidden="">
-			<option value="">Select Value</option>
-			<option value="Cold Call">Cold Call</option>
-			<option value="Existing Customer">Existing Customer</option>
-			<option value="Self Generated">Self Generated</option>
-			<option value="Employee">Employee</option>
-			<option value="Partner">Partner</option>
-			<option value="Public Relations">Public Relations</option>
-			<option value="Direct Mail">Direct Mail</option>
-			<option value="Conference">Conference</option>
-			<option value="Trade Show">Trade Show</option>
-			<option value="Web Site">Website</option>
-			<option value="Word of mouth">Word of mouth</option>
-			<option value="Other">Other</option>
-			<option value="Contact Request" selected="">Contact Request</option>
-			<option value="Demo Request">Demo Request</option>
-		</select>
-                
-        </fieldset>
-        <span id="errorId"></span>
-		<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfB1l8UAAAAANMtdLv6uumX2RNgsT1MnfU5bftj"></div>
-		<noscript>
-		  <div>
-			<div style="width: 302px; height: 422px; position: relative;">
-			  <div style="width: 302px; height: 422px; position: absolute;">
-				<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LfB1l8UAAAAANMtdLv6uumX2RNgsT1MnfU5bftj"
-						frameborder="0" scrolling="no"
-						style="width: 302px; height:422px; border-style: none;">
-				</iframe>
-			  </div>
-			</div>
-			<div style="width: 300px; height: 60px; border-style: none;
-						   bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
-						   background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
-			  <textarea id="g-recaptcha-response" name="g-recaptcha-response"
-						   class="g-recaptcha-response"
-						   style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
-								  margin: 10px 25px; padding: 0px; resize: none;" >
-			  </textarea>
-			</div>
-		  </div>
-		</noscript>
-     <input name="Send" type="submit" value="SUBMIT" class="comment_submit" id="contact"/>
-</form>
+    <form action='https://forms.zohopublic.com.au/epracticetechnologiesptyltd/form/ContactForm/formperma/25JmFEhdR6Bsu4X3cJtzFUkN5TDEASULGaW48QdWn6w/htmlRecords/submit' 
+    name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' 
+    accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+    <input type="hidden" name="zf_referrer_name" value=""><!-- To Track referrals , place the referrer name within the " " in the above hidden input field -->
+<input type="hidden" name="zf_redirect_url" value=""><!-- To redirect to a specific page after record submission , place the respective url within the " " in the above hidden input field -->
+<input type="hidden" name="zc_gad" value=""><!-- If GCLID is enabled in Zoho CRM Integration, click details of AdWords Ads will be pushed to Zoho CRM -->
+<div class="zf-templateWrapper"><!---------template Header Starts Here---------->
+<ul class="zf-tempHeadBdr"><li class="zf-tempHeadContBdr"><h2 class="zf-frmTitle"><em>Contact Form</em></h2>
+<p class="zf-frmDesc"></p>
+<div class="zf-clearBoth"></div></li></ul><!---------template Header Ends Here---------->
+<!---------template Container Starts Here---------->
+<div class="zf-subContWrap zf-topAlign"><ul>
+<!---------Single Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Name 
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv">
+<span> <input type="text" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Name"/></span> <p id="SingleLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
+<!---------Email Starts Here---------->  
+<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Email 
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv">
+<span> <input fieldType=9  type="text" maxlength="255" name="Email" checktype="c5" value="" placeholder="Email&#x20;Address"/></span> <p id="Email_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Email Ends Here---------->  
+<!---------Phone Starts Here----------> 
+<li  class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Phone 
+</label>
+<div class="zf-tempContDiv zf-phonefld">
+<div
+class="zf-phwrapper"   
+>
+<span> <input type="text" compname="PhoneNumber_countrycodeval" name="PhoneNumber_countrycodeval" checktype="c7" maxlength="10" phoneFormat="1" isCountryCodeEnabled=true  id="international_PhoneNumber_countrycodeval" valType="code" placeholder="Phone&#x20;Number"/>
+<label>Code</label> </span>
+<span> <input type="text" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20" checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled=true fieldType="11" id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="2" placeholder="Phone&#x20;Number" />
+<label>Number</label> </span>
+<div class="zf-clearBoth"></div></div><p id="PhoneNumber_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Phone Ends Here----------> 
+<!---------Single Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Business Name 
+<em class="zf-important">*</em>
+</label>
+<div class="zf-tempContDiv">
+<span> <input type="text" name="SingleLine1" checktype="c1" value="" maxlength="255" fieldType=1 placeholder="Business&#x20;Name"/></span> <p id="SingleLine1_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Single Line Ends Here---------->
+<!---------Multiple Line Starts Here---------->
+<li class="zf-tempFrmWrapper zf-small"><label class="zf-labelName"> 
+Description 
+</label>
+<div class="zf-tempContDiv">
+<span> <textarea name="MultiLine" checktype="c1" maxlength="65535" placeholder="Description"></textarea> </span><p id="MultiLine_error" class="zf-errorMessage" style="display:none;">Invalid value</p>
+</div><div class="zf-clearBoth"></div></li><!---------Multiple Line Ends Here---------->
+</ul></div><!---------template Container Starts Here---------->
+<ul><li class="zf-fmFooter"><button class="zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form>
 
 
 	<!--<script type="text/javascript">
@@ -884,5 +867,11 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 </script>
 <!--End of Zopim Live Chat Script-->
 
+
+<script type="text/javascript">var zf_DateRegex = new RegExp("^(([0][1-9])|([1-2][0-9])|([3][0-1]))[-](Jan|Feb|Mar|Apr|May|Jun|Jul|Aug|Sep|Oct|Nov|Dec|JAN|FEB|MAR|APR|MAY|JUN|JUL|AUG|SEP|OCT|NOV|DEC)[-](?:(?:19|20)[0-9]{2})$");
+	var zf_MandArray = [ "SingleLine", "Email", "SingleLine1"]; 
+	var zf_FieldArray = [ "SingleLine", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "SingleLine1", "MultiLine"]; 
+	var isSalesIQIntegrationEnabled = false;
+	var salesIQFieldsArray = [];</script>
 </body>
 </html>
