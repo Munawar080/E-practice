@@ -76,7 +76,10 @@
 	<script src="js/function.js" type="text/javascript"></script>
 	<script src="js/validation.js" type="text/javascript"></script>
     <script language="javascript" type="text/javascript" src="js/prototype.js"></script>
-	<script src='https://www.google.com/recaptcha/api.js'></script>
+
+	<!-- google recaptcha api here -->
+	<!-- <script src='https://www.google.com/recaptcha/api.js'></script> -->
+	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 	
 	
 
@@ -251,12 +254,13 @@ Description
 </ul>
 <div class="zf-tempFrmWrapper">
 	<span id="errorId"></span>
-		<div id="recaptcha" class="g-recaptcha" data-sitekey="6LfB1l8UAAAAANMtdLv6uumX2RNgsT1MnfU5bftj"></div>
+		<!-- <div id="recaptcha" class="g-recaptcha" data-sitekey="6Lfzu70kAAAAAKPSnfxVVAC5YsAqvzSJajJGAu7f"></div> -->
+		<div class="g-recaptcha" data-sitekey="6Lcuz70kAAAAAINYlRwpxlhK9-602gCTA_x0Cpns"></div>
 		<noscript>
 		  <div>
 			<div style="width: 302px; height: 422px; position: relative;">
 			  <div style="width: 302px; height: 422px; position: absolute;">
-				<iframe src="https://www.google.com/recaptcha/api/fallback?k=6LfB1l8UAAAAANMtdLv6uumX2RNgsT1MnfU5bftj"
+				<iframe src="https://www.google.com/recaptcha/api/fallback?k=6Lcuz70kAAAAAINYlRwpxlhK9-602gCTA_x0Cpns"
 						frameborder="0" scrolling="no"
 						style="width: 302px; height:422px; border-style: none;">
 				</iframe>
@@ -276,7 +280,11 @@ Description
 
 </div>
 </div><!---------template Container Starts Here---------->
-<ul><li class="zf-fmFooter"><button class="zf-submitColor" >Submit</button></li></ul></div><!-- 'zf-templateWrapper' ends --></form>
+<ul><li class="zf-fmFooter"><button class="zf-submitColor g-recaptcha"
+	 >Submit</button></li></ul></div>
+	
+	
+	<!-- 'zf-templateWrapper' ends --></form>
 
 	
 
@@ -304,7 +312,7 @@ Description
 	   form = document.forms[0]; form.onsubmit = function() {
 	   response = grecaptcha.getResponse();
 	    if (response.length === 0) {document.getElementById("recaptcha").className = "error";
-		document.getElementById("recaptcha").style.backgroundColor="red";
+		// document.getElementById("recaptcha").style.backgroundColor="red";
 		document.getElementById("errorId").className = "error"
 		document.getElementById("errorId").innerHTML="reCAPTCHA is mandatory";
 		return false;}
@@ -900,6 +908,12 @@ type="text/javascript";e.parentNode.insertBefore($,e)})(document,"script");
 	var zf_FieldArray = [ "SingleLine", "Email", "PhoneNumber_countrycode", "PhoneNumber_countrycodeVal", "SingleLine1", "MultiLine"]; 
 	var isSalesIQIntegrationEnabled = false;
 	var salesIQFieldsArray = [];</script>
+
+<script>
+	function onSubmit(token) {
+	  document.getElementById("form").submit();
+	}
+  </script>
 
 
 <!-- zoho form form validation scripts -->
